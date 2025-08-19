@@ -1,7 +1,7 @@
-int veri;                           
-int kirmiziPin = 9;          
-int yesilPin = 10;         
-int maviPin = 11;      
+int data;                           
+int kirmiziPin = ;  //bu alanları doldurunuz        
+int yesilPin = ;         
+int maviPin = ;      
 void setup() {
   Serial.begin(9600);             
   pinMode(kirmiziPin,OUTPUT);     
@@ -12,17 +12,17 @@ void loop() {
   if(Serial.available()>0){         
     veri = Serial.read();        
   }
-  if(veri == 'k'){                  
+  if(data == 'k'){                  
     digitalWrite(kirmiziPin,LOW);   
     digitalWrite(yesilPin,HIGH);
     digitalWrite(maviPin,HIGH);
   }
-  else if(veri == 'y'){             
+  else if(data == 'y'){             
     digitalWrite(kirmiziPin,HIGH);
     digitalWrite(yesilPin,LOW);
     digitalWrite(maviPin,HIGH);
   }
-  else if(veri == 'm'){             
+  else if(data == 'm'){             
     digitalWrite(kirmiziPin,HIGH);
     digitalWrite(yesilPin,HIGH);
     digitalWrite(maviPin,LOW);
