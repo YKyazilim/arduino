@@ -2,13 +2,13 @@
 #include <MFRC522.h>                      
 #include <Servo.h>                      
 
-int RST_PIN = 9;                          
-int SS_PIN = 10;                        
-int servoPin = 8;                       
+int RST_PIN = ;   //bu alanları doldurunuz                       
+int SS_PIN = ;                        
+int servoPin = ;                       
 
 Servo motor;                             
 MFRC522 rfid(SS_PIN, RST_PIN);            
-byte ID[4] = {97, 76, 67, 9};          
+byte ID[4] = {, , , };          
 
 void setup() { 
   motor.attach(servoPin);       
