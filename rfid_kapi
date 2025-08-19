@@ -50,3 +50,4 @@ void ekranaYazdir(){
   }
   Serial.println("");
 }
+//ykyazilim
